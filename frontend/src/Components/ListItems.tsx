@@ -76,7 +76,7 @@ export const ListItems = (props: allTaskArrayType) => {
     }
 
     return <div className="allTaskDiv">
-
+{props.allTaskArray.length===0? <h6 style={{ textAlign: "center", marginTop: "30px", color: "grey" }}>No Task Added !</h6>:null}
         {props.allTaskArray.map((item, index) => makeListItem({ item, index }))}
 
     </div>
