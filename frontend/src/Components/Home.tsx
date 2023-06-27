@@ -12,7 +12,7 @@ export const Home = (props: homeProp) => {
     const [allTaskArray, setAllTaskArray] = useState([])
     async function showTask() {
         try {
-            const response = await fetch("http://localhost:5000/api/showTask", {
+            const response = await fetch("https://todolistmern.onrender.com/api/showTask", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

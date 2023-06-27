@@ -8,14 +8,13 @@ type InputAreaProps = {
 
 
 export const InputArea = (props: InputAreaProps) => {
-    // const inputArray=useInputArray()
     const [inputItem, setInputItem] = useState("");
     function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
         setInputItem(event.target.value);
     }
     async function handleClick() {
         try {
-            const response = await fetch("http://localhost:5000/api/addTask", {
+            const response = await fetch("https://todolistmern.onrender.com/api/addTask", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

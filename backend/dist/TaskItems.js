@@ -24,10 +24,6 @@ router.post("/addTask", (req, res) => __awaiter(void 0, void 0, void 0, function
         yield allTask.create({
             task: req.body.task
         });
-        // const taskCollection = await mongoose.connection.db.collection("alltasks");
-        // const data = await taskCollection.find({}).toArray();
-        // const desiredData=data.map((item)=>item.task)
-        // console.log(desiredData)
         res.json({ success: true });
     }
     catch (err) {

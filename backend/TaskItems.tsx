@@ -14,10 +14,7 @@ async(req,res)=>{
         await allTask.create({
             task:req.body.task
         })
-        // const taskCollection = await mongoose.connection.db.collection("alltasks");
-        // const data = await taskCollection.find({}).toArray();
-        // const desiredData=data.map((item)=>item.task)
-        // console.log(desiredData)
+
         res.json({success:true})
     } catch(err){
         console.log("error from taskitem",err)

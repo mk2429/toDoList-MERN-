@@ -10,7 +10,7 @@ export const ListItems = (props: allTaskArrayType) => {
 
     async function deleteTask(task: string) {
         try {
-            const response = await fetch("http://localhost:5000/api/deleteTask", {
+            const response = await fetch("https://todolistmern.onrender.com/api/deleteTask", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
