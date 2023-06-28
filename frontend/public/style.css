@@ -18,7 +18,8 @@ body {
   .homeContainer {
     width: 90vw;
     max-width: none;
-    height: 50vh;
+    height: 500px;
+    background: red;
     margin-top: 160px;
   }
   
