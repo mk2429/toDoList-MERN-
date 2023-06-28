@@ -67,7 +67,7 @@ export const ListItems = (props: allTaskArrayType) => {
         const itemDivId = `div${index}`
         return (
             <div className="lidiv">
-                <div className="liItem" style={{ background: "#d9dff8" }} id={itemDivId} onMouseEnter={() => mouseEnterLiDiv(itemDivId)} onMouseLeave={() => mouseLeaveLiDiv(itemDivId)}><div key={index} id={itemId} style={{ color: "black", width: "80%", wordWrap: "break-word" }} onClick={() => toggleLineThrough(itemId)}>{item}</div> <IconButton aria-label="delete" onClick={() => deleteTask(item)}>
+                <div className="liItem" style={{ background: "#d9dff8" ,display:"flex",alignItems:'center'}} id={itemDivId} onMouseEnter={() => mouseEnterLiDiv(itemDivId)} onMouseLeave={() => mouseLeaveLiDiv(itemDivId)}><div key={index} id={itemId} style={{ color: "black", width: "80%", wordWrap: "break-word" }} onClick={() => toggleLineThrough(itemId)}>{item}</div> <IconButton aria-label="delete" onClick={() => deleteTask(item)}>
                     <DeleteIcon style={{ color: "purple" }} />
                 </IconButton>
                 </div>
