@@ -6,7 +6,7 @@ body {
 
 
 .homeContainer {
-  margin-top: 4vmin;
+  margin-top: 12vmin;
   height: 80vh;
   width: 50vw;
   min-width: 250px;
@@ -19,7 +19,6 @@ body {
     width: 90vw;
     max-width: none;
     height: 500px;
-    background: red;
     margin-top: 160px;
   }
   
