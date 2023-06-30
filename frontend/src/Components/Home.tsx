@@ -35,7 +35,7 @@ export const Home = (props: homeProp) => {
     }
     return (
         <div className="homeContainer" style={{ position: "relative" }}>
-            <h1 style={{ textAlign: "center", marginTop: "30px", color: "#d9dff8" }}>To Do List</h1>
+            <h1 className="homeHeading">To Do List</h1>
             <div className="typeWriter">
                 <Typewriter
                     options={{
