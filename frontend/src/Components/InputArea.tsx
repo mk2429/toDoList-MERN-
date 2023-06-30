@@ -40,7 +40,7 @@ export const InputArea = (props: InputAreaProps) => {
     }
     return (<>
     {showStatus ? <div className="alert alert-info d-flex justify-content-between " style={{ height: "55px", position: "fixed", top: "0px" }}>
-                    <p><strong>YAY!</strong>  Your blog has been successfully updated.</p>
+                    <p><strong>YAY!</strong>  Your Task Has Been Successfully Curated!.</p>
                     <CloseIcon onClick={()=>setShowStatus(false)} />
                 </div> : null}
         <div className="inputAreaContainer">
